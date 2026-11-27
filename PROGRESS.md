@@ -11,3 +11,8 @@
 - [x] Unit + integration tests, CI matrix PHP 7.4–8.3 × WP 6.5–latest
 - [ ] Real-tenant test (Microsoft 365 and Google) by Cormac
 - [ ] Screenshots and artwork
+
+## CI fixes (2026-11-27)
+
+- [x] install-wp-tests.sh tag matching for WP 6.5 / 6.7 integration matrix
+- [x] Plugin Check: CatcherBase ABSPATH, Dns/Screens OffloadedContent false positives

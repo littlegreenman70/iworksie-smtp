@@ -229,7 +229,7 @@ final class Dns {
 			'googlemail.com'    => array( 'Google', array( '_spf.google.com' ), array( 'google' ) ),
 			'sendgrid.net'      => array( 'SendGrid', array( 'sendgrid.net' ), array( 's1', 's2' ) ),
 			'mailgun.org'       => array( 'Mailgun', array( 'mailgun.org', 'eu.mailgun.org' ), array( 'mx', 'k1', 'smtp', 'pic' ) ),
-			'amazonaws.com'     => array( 'Amazon SES', array( 'amazonses.com' ), array() ),
+			'amazonaws.com'     => array( 'Amazon SES', array( 'amazonses.com' ), array() ), // phpcs:ignore PluginCheck.CodeAnalysis.Offloading.OffloadedContent -- SPF hostname map, not a CDN URL.
 			'brevo.com'         => array( 'Brevo', array( 'spf.brevo.com', 'spf.sendinblue.com' ), array( 'brevo1', 'brevo2', 'mail' ) ),
 			'sendinblue.com'    => array( 'Brevo', array( 'spf.brevo.com', 'spf.sendinblue.com' ), array( 'brevo1', 'brevo2', 'mail' ) ),
 			'postmarkapp.com'   => array( 'Postmark', array( 'spf.mtasv.net' ), array() ),

@@ -3,13 +3,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: iWorks.ie SMTP 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/app\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/iworksie-smtp\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-27T00:09:06+00:00\n"
+"POT-Creation-Date: 2026-11-27T15:01:25+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: iworksie-smtp\n"
@@ -51,7 +51,7 @@ msgstr ""
 msgid "iWorks.ie SMTP is missing its vendor-prefixed library. Run composer install, or install the release zip from wordpress.org."
 msgstr ""
 
-#: iworksie-smtp.php:108
+#: iworksie-smtp.php:109
 msgid "iWorks.ie SMTP could not load its shared tools library."
 msgstr ""
 
@@ -182,12 +182,12 @@ msgid "Other SMTP"
 msgstr ""
 
 #: src/Admin/Screens.php:55
-#: src/Admin/Screens.php:548
+#: src/Admin/Screens.php:549
 msgid "Sent"
 msgstr ""
 
 #: src/Admin/Screens.php:55
-#: src/Admin/Screens.php:549
+#: src/Admin/Screens.php:550
 msgid "Failed"
 msgstr ""
 
@@ -476,229 +476,229 @@ msgstr ""
 msgid "Your credentials stay on this site. Emails go straight from your server to Google; nothing passes through iWorks."
 msgstr ""
 
-#: src/Admin/Screens.php:294
+#: src/Admin/Screens.php:295
 msgid "Client ID"
 msgstr ""
 
-#: src/Admin/Screens.php:294
+#: src/Admin/Screens.php:295
 msgid "Ends in .apps.googleusercontent.com"
 msgstr ""
 
-#: src/Admin/Screens.php:295
+#: src/Admin/Screens.php:296
 msgid "Client secret"
 msgstr ""
 
-#: src/Admin/Screens.php:299
+#: src/Admin/Screens.php:300
 msgid "Connect with Google"
 msgstr ""
 
-#: src/Admin/Screens.php:301
+#: src/Admin/Screens.php:302
 msgid "Save the client ID and secret, then a \"Connect with Google\" button appears here."
 msgstr ""
 
-#: src/Admin/Screens.php:315
+#: src/Admin/Screens.php:316
 msgid "Fill in for:"
 msgstr ""
 
-#: src/Admin/Screens.php:328
+#: src/Admin/Screens.php:329
 msgid "Using Microsoft 365 or Gmail? Choose them above instead: both are retiring password sign-in over SMTP."
 msgstr ""
 
-#: src/Admin/Screens.php:331
+#: src/Admin/Screens.php:332
 msgid "SMTP host"
 msgstr ""
 
-#: src/Admin/Screens.php:332
+#: src/Admin/Screens.php:333
 msgid "Encryption"
 msgstr ""
 
-#: src/Admin/Screens.php:335
+#: src/Admin/Screens.php:336
 msgid "TLS / STARTTLS (usually port 587)"
 msgstr ""
 
-#: src/Admin/Screens.php:336
+#: src/Admin/Screens.php:337
 msgid "SSL (usually port 465)"
 msgstr ""
 
-#: src/Admin/Screens.php:337
+#: src/Admin/Screens.php:338
 msgid "None (upgrades to TLS if the server offers it)"
 msgstr ""
 
-#: src/Admin/Screens.php:343
+#: src/Admin/Screens.php:344
 msgid "Port"
 msgstr ""
 
-#: src/Admin/Screens.php:344
+#: src/Admin/Screens.php:345
 msgid "Sign in"
 msgstr ""
 
-#: src/Admin/Screens.php:344
+#: src/Admin/Screens.php:345
 msgid "Almost every provider needs a username and password (or API key)."
 msgstr ""
 
-#: src/Admin/Screens.php:345
+#: src/Admin/Screens.php:346
 msgid "Username"
 msgstr ""
 
-#: src/Admin/Screens.php:346
+#: src/Admin/Screens.php:347
 msgid "Password or API key"
 msgstr ""
 
-#: src/Admin/Screens.php:435
+#: src/Admin/Screens.php:436
 msgid "Set in wp-config.php"
 msgstr ""
 
 #. translators: %s: constant name
-#: src/Admin/Screens.php:437
+#: src/Admin/Screens.php:438
 #, php-format
 msgid "Defined by the %s constant in wp-config.php."
 msgstr ""
 
-#: src/Admin/Screens.php:441
+#: src/Admin/Screens.php:442
 msgid "Saved. Leave empty to keep it."
 msgstr ""
 
-#: src/Admin/Screens.php:444
+#: src/Admin/Screens.php:445
 msgid "The saved value can no longer be decrypted (the site's security keys changed). Please enter it again."
 msgstr ""
 
-#: src/Admin/Screens.php:446
+#: src/Admin/Screens.php:447
 msgid "Remove the saved value"
 msgstr ""
 
 #. translators: %s: mailer name
-#: src/Admin/Screens.php:477
+#: src/Admin/Screens.php:478
 #, php-format
 msgid "Currently sending through: %s"
 msgstr ""
 
-#: src/Admin/Screens.php:481
+#: src/Admin/Screens.php:482
 msgid "Send a test email to"
 msgstr ""
 
-#: src/Admin/Screens.php:483
+#: src/Admin/Screens.php:484
 msgid "Send as HTML"
 msgstr ""
 
-#: src/Admin/Screens.php:484
+#: src/Admin/Screens.php:485
 msgid "Tip: send it to an address at a different provider (for example a Gmail address if you send from Microsoft 365) to see whether it lands in the inbox or spam."
 msgstr ""
 
-#: src/Admin/Screens.php:485
+#: src/Admin/Screens.php:486
 msgid "Send test email"
 msgstr ""
 
-#: src/Admin/Screens.php:501
+#: src/Admin/Screens.php:502
 msgid "\"Sent\" means the mail service accepted it. Check the inbox (and the spam folder) to confirm delivery. If it went to spam, run Diagnostics."
 msgstr ""
 
-#: src/Admin/Screens.php:506
+#: src/Admin/Screens.php:507
 msgid "SMTP conversation (passwords hidden)"
 msgstr ""
 
-#: src/Admin/Screens.php:532
+#: src/Admin/Screens.php:533
 msgid "The email log is switched off. Turn it on in Setup → Email log and alerts."
 msgstr ""
 
-#: src/Admin/Screens.php:547
+#: src/Admin/Screens.php:548
 msgid "All"
 msgstr ""
 
-#: src/Admin/Screens.php:564
+#: src/Admin/Screens.php:565
 msgid "Search recipient or subject"
 msgstr ""
 
-#: src/Admin/Screens.php:565
+#: src/Admin/Screens.php:566
 msgid "Recipient or subject"
 msgstr ""
 
-#: src/Admin/Screens.php:566
+#: src/Admin/Screens.php:567
 msgid "Search"
 msgstr ""
 
-#: src/Admin/Screens.php:570
+#: src/Admin/Screens.php:571
 msgid "No emails logged yet."
 msgstr ""
 
-#: src/Admin/Screens.php:574
-#: src/Admin/Screens.php:652
+#: src/Admin/Screens.php:575
+#: src/Admin/Screens.php:653
 msgid "Date"
 msgstr ""
 
-#: src/Admin/Screens.php:575
+#: src/Admin/Screens.php:576
 msgid "Status"
 msgstr ""
 
-#: src/Admin/Screens.php:576
-#: src/Admin/Screens.php:653
+#: src/Admin/Screens.php:577
+#: src/Admin/Screens.php:654
 msgid "To"
 msgstr ""
 
-#: src/Admin/Screens.php:577
+#: src/Admin/Screens.php:578
 msgid "Subject"
 msgstr ""
 
-#: src/Admin/Screens.php:578
-#: src/Admin/Screens.php:654
+#: src/Admin/Screens.php:579
+#: src/Admin/Screens.php:655
 msgid "Sent through"
 msgstr ""
 
-#: src/Admin/Screens.php:593
-#: src/Admin/Screens.php:650
+#: src/Admin/Screens.php:594
+#: src/Admin/Screens.php:651
 msgid "(no subject)"
 msgstr ""
 
 #. translators: 1: days, 2: rows
-#: src/Admin/Screens.php:619
+#: src/Admin/Screens.php:620
 #, php-format
 msgid "Entries are deleted after %1$d days, and only the newest %2$d are kept. Change this on the Setup tab."
 msgstr ""
 
-#: src/Admin/Screens.php:629
+#: src/Admin/Screens.php:630
 msgid "Clear the log"
 msgstr ""
 
-#: src/Admin/Screens.php:642
+#: src/Admin/Screens.php:643
 msgid "Back to the log"
 msgstr ""
 
-#: src/Admin/Screens.php:644
+#: src/Admin/Screens.php:645
 msgid "This entry no longer exists."
 msgstr ""
 
-#: src/Admin/Screens.php:656
+#: src/Admin/Screens.php:657
 msgid "Resend of"
 msgstr ""
 
-#: src/Admin/Screens.php:659
+#: src/Admin/Screens.php:660
 msgid "Headers"
 msgstr ""
 
-#: src/Admin/Screens.php:668
+#: src/Admin/Screens.php:669
 msgid "Message"
 msgstr ""
 
-#: src/Admin/Screens.php:671
+#: src/Admin/Screens.php:672
 msgid "Resend this email"
 msgstr ""
 
-#: src/Admin/Screens.php:673
+#: src/Admin/Screens.php:674
 msgid "Message content was not kept, so this email cannot be resent. Switch on \"Also keep message content\" on the Setup tab to resend future emails."
 msgstr ""
 
-#: src/Admin/Screens.php:690
+#: src/Admin/Screens.php:691
 msgid "Check your email setup"
 msgstr ""
 
-#: src/Admin/Screens.php:691
+#: src/Admin/Screens.php:692
 msgid "Signs in to your mail service without sending anything, and looks up SPF, DKIM and DMARC for your From domain. Takes a few seconds and changes nothing."
 msgstr ""
 
-#: src/Admin/Screens.php:692
+#: src/Admin/Screens.php:693
 msgid "Run diagnostics"
 msgstr ""
 
-#: src/Admin/Screens.php:697
+#: src/Admin/Screens.php:698
 msgid "Diagnostics results"
 msgstr ""
 

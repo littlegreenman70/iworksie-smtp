@@ -291,6 +291,7 @@ final class Screens {
 		echo '</div>';
 
 		echo '<table class="form-table" role="presentation"><tbody>';
+		// phpcs:ignore PluginCheck.CodeAnalysis.Offloading.OffloadedContent -- help text naming Google's client-id suffix, not a CDN URL.
 		$this->row_text( 'google_client_id', __( 'Client ID', 'iworksie-smtp' ), (string) $s['google_client_id'], 'text', __( 'Ends in .apps.googleusercontent.com', 'iworksie-smtp' ) );
 		$this->row_secret( 'google_client_secret', __( 'Client secret', 'iworksie-smtp' ) );
 		echo '</tbody></table>';
@@ -318,7 +319,7 @@ final class Screens {
 			'mailgun'  => array( 'Mailgun', 'smtp.mailgun.org', 587, 'tls' ),
 			'sendgrid' => array( 'SendGrid', 'smtp.sendgrid.net', 587, 'tls' ),
 			'postmark' => array( 'Postmark', 'smtp.postmarkapp.com', 587, 'tls' ),
-			'ses'      => array( 'Amazon SES (eu-west-1)', 'email-smtp.eu-west-1.amazonaws.com', 587, 'tls' ),
+			'ses'      => array( 'Amazon SES (eu-west-1)', 'email-smtp.eu-west-1.amazonaws.com', 587, 'tls' ), // phpcs:ignore PluginCheck.CodeAnalysis.Offloading.OffloadedContent -- SMTP host preset, not a CDN URL.
 			'zoho'     => array( 'Zoho (EU)', 'smtp.zoho.eu', 465, 'ssl' ),
 		);
 		foreach ( $presets as $key => $p ) {

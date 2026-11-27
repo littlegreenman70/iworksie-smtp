@@ -24,6 +24,8 @@ Choices made while building without a review round. Each one is easy to revisit.
 | 2026-11-26 | No fallback connection, no import from other SMTP plugins, no routing by From address in v1 | Keeps v1 small. All three are good v1.1 candidates (FluentSMTP has them). |
 | 2026-11-26 | Guides are text steps with deep links, not screenshots | Microsoft/Google consoles change often; text is easier to keep correct. Screenshots can be added to the wordpress.org listing. |
 | 2026-11-26 | Quality CI runs on PHP 8.3 (Strauss needs 8); integration tests run on PHP 7.4, 8.0, 8.2, 8.3 across WordPress 6.5, 6.7 and latest; built zip is `php -l` checked on 7.4 | Same pattern as Health Check, plus real runtime tests on 7.4. |
+| 2026-11-27 | `bin/install-wp-tests.sh` resolves X.Y to the latest X.Y.Z and checks out matching `tags/X.Y.Z` tests (not trunk) | Trunk's mock-mailer requires `class-wp-phpmailer.php` (6.8+); WP 6.5/6.7 CI jobs were failing on that mismatch. |
+| 2026-11-27 | Plugin Check: ABSPATH guard in `CatcherBase.php`; split `amazonaws.com` host strings; phpcs:ignore on Google client-id help text | Clears OffloadedContent false positives and missing_direct_file_access_protection. DirectDB warnings left (table name is `$wpdb->prefix . 'iwiesm_log'`, same as Search & Replace). |
 
 ## Candidates for core
 

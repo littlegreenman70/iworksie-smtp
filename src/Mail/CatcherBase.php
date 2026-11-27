@@ -10,6 +10,10 @@
 
 namespace IWorksIE\SMTP\Mail;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 // phpcs:disable Generic.Files.OneObjectStructurePerFile.MultipleFound, Generic.Classes.DuplicateClassName.Found
 if ( class_exists( '\WP_PHPMailer', false ) ) {
 	/**
