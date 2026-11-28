@@ -1,0 +1,1776 @@
+# Copyright (C) 2026 iWorks.ie
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: iWorks.ie SMTP 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/iworksie-smtp\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-28T17:50:40+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: iworksie-smtp\n"
+
+#. Plugin Name of the plugin
+#: iworksie-smtp.php
+msgid "iWorks.ie SMTP"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: iworksie-smtp.php
+msgid "https://www.iworks.ie"
+msgstr ""
+
+#. Description of the plugin
+#: iworksie-smtp.php
+msgid "Send WordPress email through Microsoft 365 (Graph API), Google (Gmail API) or any SMTP server. Plain-English errors, deliverability checks and a size-capped email log. No upsells."
+msgstr ""
+
+#. Author of the plugin
+#: iworksie-smtp.php
+msgid "iWorks.ie"
+msgstr ""
+
+#. translators: 1: required PHP version, 2: current PHP version
+#: iworksie-smtp.php:47
+#, php-format
+msgid "iWorks.ie SMTP requires PHP %1$s or higher. This site is running PHP %2$s."
+msgstr ""
+
+#. translators: 1: required WordPress version, 2: current WordPress version
+#: iworksie-smtp.php:60
+#, php-format
+msgid "iWorks.ie SMTP requires WordPress %1$s or higher. This site is running WordPress %2$s."
+msgstr ""
+
+#: iworksie-smtp.php:71
+msgid "iWorks.ie SMTP is missing its vendor-prefixed library. Run composer install, or install the release zip from wordpress.org."
+msgstr ""
+
+#: iworksie-smtp.php:109
+msgid "iWorks.ie SMTP could not load its shared tools library."
+msgstr ""
+
+#: src/Admin/Actions.php:59
+msgid "Sorry, you are not allowed to do that."
+msgstr ""
+
+#: src/Admin/Actions.php:153
+msgid "Settings saved."
+msgstr ""
+
+#: src/Admin/Actions.php:155
+msgid "Next: click \"Connect with Google\"."
+msgstr ""
+
+#: src/Admin/Actions.php:157
+msgid "Next: send a test email."
+msgstr ""
+
+#: src/Admin/Actions.php:177
+msgid "Enter a valid email address to send the test to."
+msgstr ""
+
+#. translators: %s: site name
+#: src/Admin/Actions.php:185
+#, php-format
+msgid "Test email from %s"
+msgstr ""
+
+#: src/Admin/Actions.php:192
+msgid "Good news: this email was sent by iWorks.ie SMTP."
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Admin/Actions.php:194
+#, php-format
+msgid "Sent through: %s"
+msgstr ""
+
+#. translators: %s: date and time
+#: src/Admin/Actions.php:196
+#, php-format
+msgid "Sent at: %s"
+msgstr ""
+
+#. translators: %s: site URL
+#: src/Admin/Actions.php:198
+#, php-format
+msgid "Website: %s"
+msgstr ""
+
+#: src/Admin/Actions.php:200
+msgid "If this arrived in spam or junk, run Diagnostics in the plugin to check SPF, DKIM and DMARC for your domain."
+msgstr ""
+
+#. translators: 1: address, 2: milliseconds
+#: src/Admin/Actions.php:230
+#, php-format
+msgid "Test email sent to %1$s in %2$d ms."
+msgstr ""
+
+#: src/Admin/Actions.php:240
+msgid "The test email could not be sent."
+msgstr ""
+
+#: src/Admin/Actions.php:244
+msgid "wp_mail() returned false without an error message. Another plugin may have blocked the email."
+msgstr ""
+
+#: src/Admin/Actions.php:262
+msgid "Save the Google client ID and client secret first."
+msgstr ""
+
+#: src/Admin/Actions.php:289
+msgid "The Google sign-in link expired. Click \"Connect with Google\" again."
+msgstr ""
+
+#: src/Admin/Actions.php:295
+#: src/Admin/Actions.php:312
+msgid "Google did not connect."
+msgstr ""
+
+#. translators: %s: email
+#: src/Admin/Actions.php:308
+#, php-format
+msgid "Connected to Google as %s. Next: send a test email."
+msgstr ""
+
+#: src/Admin/Actions.php:309
+msgid "Connected to Google. Next: send a test email."
+msgstr ""
+
+#: src/Admin/Actions.php:326
+msgid "Disconnected from Google."
+msgstr ""
+
+#: src/Admin/Actions.php:339
+msgid "Email log cleared."
+msgstr ""
+
+#: src/Admin/Actions.php:354
+msgid "This email cannot be resent because its content was not kept."
+msgstr ""
+
+#: src/Admin/Actions.php:356
+msgid "Email resent."
+msgstr ""
+
+#: src/Admin/Actions.php:358
+msgid "Resending failed again. See the newest entry in the log for the reason."
+msgstr ""
+
+#: src/Admin/Screens.php:41
+msgid "WordPress default (PHP mail)"
+msgstr ""
+
+#: src/Admin/Screens.php:42
+msgid "Microsoft 365"
+msgstr ""
+
+#: src/Admin/Screens.php:43
+msgid "Google Workspace / Gmail"
+msgstr ""
+
+#: src/Admin/Screens.php:44
+#: src/Checks/MailerCheck.php:69
+msgid "Other SMTP"
+msgstr ""
+
+#: src/Admin/Screens.php:55
+#: src/Admin/Screens.php:549
+msgid "Sent"
+msgstr ""
+
+#: src/Admin/Screens.php:55
+#: src/Admin/Screens.php:550
+msgid "Failed"
+msgstr ""
+
+#: src/Admin/Screens.php:65
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
+
+#: src/Admin/Screens.php:69
+msgid "Setup"
+msgstr ""
+
+#: src/Admin/Screens.php:70
+msgid "Send a test"
+msgstr ""
+
+#: src/Admin/Screens.php:71
+msgid "Email log"
+msgstr ""
+
+#: src/Admin/Screens.php:72
+msgid "Diagnostics"
+msgstr ""
+
+#: src/Admin/Screens.php:132
+msgid "How to fix it"
+msgstr ""
+
+#: src/Admin/Screens.php:134
+msgid "Technical message"
+msgstr ""
+
+#: src/Admin/Screens.php:157
+msgid "1. How should this site send email?"
+msgstr ""
+
+#: src/Admin/Screens.php:158
+msgid "Mailer"
+msgstr ""
+
+#: src/Admin/Screens.php:160
+msgid "Your Microsoft 365 / Outlook business mailbox, through the Microsoft Graph API. No SMTP password, no redirect loop."
+msgstr ""
+
+#: src/Admin/Screens.php:161
+msgid "Google Workspace or a Gmail account, through the Gmail API with Google sign-in."
+msgstr ""
+
+#: src/Admin/Screens.php:162
+msgid "Any SMTP server: your host, Brevo, Mailgun, SendGrid, Amazon SES, Postmark, Zoho and others."
+msgstr ""
+
+#: src/Admin/Screens.php:163
+msgid "Leave email to the web server. Often blocked or sent to spam."
+msgstr ""
+
+#: src/Admin/Screens.php:177
+msgid "2. Connect it"
+msgstr ""
+
+#: src/Admin/Screens.php:182
+msgid "Nothing to connect. WordPress will hand emails to the web server, as it does without this plugin. The email log and alerts below still work."
+msgstr ""
+
+#: src/Admin/Screens.php:188
+msgid "3. Who emails come from"
+msgstr ""
+
+#: src/Admin/Screens.php:192
+#: src/Checks/FromAddressCheck.php:39
+msgid "From address"
+msgstr ""
+
+#: src/Admin/Screens.php:196
+msgid "With Microsoft 365, emails are always sent from the mailbox above, so this is not used."
+msgstr ""
+
+#: src/Admin/Screens.php:197
+msgid "A real address on your own domain, for example hello@yourdomain.com. With Google, leave it empty to use the connected account."
+msgstr ""
+
+#: src/Admin/Screens.php:199
+msgid "Force From address"
+msgstr ""
+
+#: src/Admin/Screens.php:199
+msgid "Use this address for every email, even when another plugin sets its own. Recommended: mail services reject addresses you do not own. Replies still go to the Reply-To a form sets."
+msgstr ""
+
+#: src/Admin/Screens.php:200
+msgid "From name"
+msgstr ""
+
+#: src/Admin/Screens.php:200
+msgid "For example your business name. Used when a plugin does not set its own name (or always, if forced below)."
+msgstr ""
+
+#: src/Admin/Screens.php:201
+msgid "Force From name"
+msgstr ""
+
+#: src/Admin/Screens.php:201
+msgid "Use this name for every email."
+msgstr ""
+
+#: src/Admin/Screens.php:202
+msgid "Return path (SMTP only)"
+msgstr ""
+
+#: src/Admin/Screens.php:202
+msgid "Send bounce messages to the From address. Helps SPF alignment with most SMTP providers."
+msgstr ""
+
+#: src/Admin/Screens.php:203
+msgid "DKIM selector (optional)"
+msgstr ""
+
+#: src/Admin/Screens.php:203
+msgid "Only for Diagnostics. If your SMTP provider gave you a DKIM record like abc._domainkey.yourdomain.com, enter abc. Microsoft 365 and Google are detected automatically."
+msgstr ""
+
+#: src/Admin/Screens.php:208
+msgid "4. Email log and alerts"
+msgstr ""
+
+#: src/Admin/Screens.php:210
+msgid "Keep an email log"
+msgstr ""
+
+#: src/Admin/Screens.php:210
+msgid "Records the date, recipient, subject, result and error for each email."
+msgstr ""
+
+#: src/Admin/Screens.php:211
+msgid "Also keep message content"
+msgstr ""
+
+#: src/Admin/Screens.php:211
+msgid "Needed to resend an email from the log. Off by default because emails such as password resets contain private links."
+msgstr ""
+
+#: src/Admin/Screens.php:212
+msgid "Delete log entries after"
+msgstr ""
+
+#: src/Admin/Screens.php:212
+msgid "days"
+msgstr ""
+
+#: src/Admin/Screens.php:213
+msgid "Keep at most"
+msgstr ""
+
+#: src/Admin/Screens.php:213
+msgid "entries (oldest are deleted first)"
+msgstr ""
+
+#: src/Admin/Screens.php:214
+msgid "Email me when sending fails"
+msgstr ""
+
+#: src/Admin/Screens.php:214
+msgid "At most one alert per hour, sent with the server's own mail() so it does not depend on the connection that failed. With Microsoft 365, also warns two weeks before the client secret expires."
+msgstr ""
+
+#: src/Admin/Screens.php:215
+msgid "Alert address"
+msgstr ""
+
+#: src/Admin/Screens.php:215
+msgid "Leave empty to use the site admin email. Use an address on a different provider if you can."
+msgstr ""
+
+#: src/Admin/Screens.php:218
+msgid "Save settings"
+msgstr ""
+
+#: src/Admin/Screens.php:232
+msgid "Set up Microsoft 365 (about 10 minutes, needs a Microsoft 365 admin)"
+msgstr ""
+
+#: src/Admin/Screens.php:234
+msgid "Sign in to the <a href=\"https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade\" target=\"_blank\" rel=\"noopener noreferrer\">Microsoft Entra admin centre</a> and go to <strong>App registrations → New registration</strong>."
+msgstr ""
+
+#. translators: %s: suggested app name
+#: src/Admin/Screens.php:236
+#, php-format
+msgid "Name it something you will recognise, for example <code>%s</code>. Choose <strong>Accounts in this organizational directory only</strong>. Leave Redirect URI empty. Click Register."
+msgstr ""
+
+#: src/Admin/Screens.php:237
+msgid "On the app's <strong>Overview</strong> page, copy the <strong>Application (client) ID</strong> and the <strong>Directory (tenant) ID</strong> into the fields below."
+msgstr ""
+
+#: src/Admin/Screens.php:238
+msgid "Go to <strong>Certificates &amp; secrets → Client secrets → New client secret</strong>. Pick the longest expiry offered. Copy the <strong>Value</strong> column straight away (not the Secret ID; the Value is only shown once) and note the <strong>Expires</strong> date."
+msgstr ""
+
+#: src/Admin/Screens.php:239
+msgid "Go to <strong>API permissions → Add a permission → Microsoft Graph → Application permissions</strong>, tick <strong>Mail.Send</strong>, and click Add. Then click <strong>Grant admin consent for &lt;your organisation&gt;</strong> and check the status shows a green tick."
+msgstr ""
+
+#: src/Admin/Screens.php:240
+msgid "Recommended: Mail.Send as an application permission can send as any mailbox in your organisation. Ask your admin to limit the app to the one mailbox below with <a href=\"https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac\" target=\"_blank\" rel=\"noopener noreferrer\">RBAC for Applications in Exchange Online</a>."
+msgstr ""
+
+#: src/Admin/Screens.php:242
+msgid "Why not SMTP? Microsoft is retiring password sign-in over SMTP. The Graph API is Microsoft's supported way for apps to send mail, and this setup never needs a browser redirect, so there is no sign-in loop to get stuck in."
+msgstr ""
+
+#: src/Admin/Screens.php:246
+msgid "Directory (tenant) ID"
+msgstr ""
+
+#: src/Admin/Screens.php:246
+msgid "A GUID like 1a2b3c4d-..., or yourcompany.onmicrosoft.com."
+msgstr ""
+
+#: src/Admin/Screens.php:247
+msgid "Application (client) ID"
+msgstr ""
+
+#: src/Admin/Screens.php:248
+msgid "Client secret value"
+msgstr ""
+
+#: src/Admin/Screens.php:249
+msgid "Client secret expires on"
+msgstr ""
+
+#: src/Admin/Screens.php:249
+msgid "From the Expires column. We email you two weeks before it runs out."
+msgstr ""
+
+#: src/Admin/Screens.php:250
+msgid "Send from mailbox"
+msgstr ""
+
+#: src/Admin/Screens.php:250
+msgid "The primary address of a licensed user or a shared mailbox, for example hello@yourdomain.com. Every email is sent from this address."
+msgstr ""
+
+#. translators: %s: Google account email
+#: src/Admin/Screens.php:271
+#, php-format
+msgid "Connected as %s"
+msgstr ""
+
+#: src/Admin/Screens.php:272
+msgid "your Google account"
+msgstr ""
+
+#: src/Admin/Screens.php:275
+msgid "Disconnect"
+msgstr ""
+
+#: src/Admin/Screens.php:280
+msgid "Set up Google (about 10 minutes)"
+msgstr ""
+
+#: src/Admin/Screens.php:282
+msgid "Open the <a href=\"https://console.cloud.google.com/projectcreate\" target=\"_blank\" rel=\"noopener noreferrer\">Google Cloud console</a>, signed in as the account that will send the email, and create a project (for example \"Website email\")."
+msgstr ""
+
+#: src/Admin/Screens.php:283
+msgid "Go to <strong>APIs &amp; Services → Library</strong>, search for <strong>Gmail API</strong> and click <strong>Enable</strong>."
+msgstr ""
+
+#: src/Admin/Screens.php:284
+msgid "Go to <strong>Google Auth Platform</strong> (OAuth consent screen) and click Get started. For <strong>Audience</strong>: with Google Workspace choose <strong>Internal</strong>. With a personal Gmail account choose <strong>External</strong>, then on the Audience page click <strong>Publish app</strong> so it is \"In production\". Apps left in \"Testing\" are disconnected by Google after 7 days."
+msgstr ""
+
+#: src/Admin/Screens.php:285
+msgid "Go to <strong>Clients → Create client</strong>, choose <strong>Web application</strong>, and under <strong>Authorised redirect URIs</strong> add exactly this address:"
+msgstr ""
+
+#: src/Admin/Screens.php:287
+msgid "Click Create, copy the <strong>Client ID</strong> and <strong>Client secret</strong> into the fields below, and save."
+msgstr ""
+
+#: src/Admin/Screens.php:288
+msgid "Click <strong>Connect with Google</strong> and approve \"Send email on your behalf\". With External apps Google shows \"Google hasn't verified this app\": click <strong>Advanced → Go to (your app)</strong>. That is expected, because the app is yours."
+msgstr ""
+
+#: src/Admin/Screens.php:290
+msgid "Your credentials stay on this site. Emails go straight from your server to Google; nothing passes through iWorks."
+msgstr ""
+
+#: src/Admin/Screens.php:295
+msgid "Client ID"
+msgstr ""
+
+#: src/Admin/Screens.php:295
+msgid "Ends in .apps.googleusercontent.com"
+msgstr ""
+
+#: src/Admin/Screens.php:296
+msgid "Client secret"
+msgstr ""
+
+#: src/Admin/Screens.php:300
+msgid "Connect with Google"
+msgstr ""
+
+#: src/Admin/Screens.php:302
+msgid "Save the client ID and secret, then a \"Connect with Google\" button appears here."
+msgstr ""
+
+#: src/Admin/Screens.php:316
+msgid "Fill in for:"
+msgstr ""
+
+#: src/Admin/Screens.php:329
+msgid "Using Microsoft 365 or Gmail? Choose them above instead: both are retiring password sign-in over SMTP."
+msgstr ""
+
+#: src/Admin/Screens.php:332
+msgid "SMTP host"
+msgstr ""
+
+#: src/Admin/Screens.php:333
+msgid "Encryption"
+msgstr ""
+
+#: src/Admin/Screens.php:336
+msgid "TLS / STARTTLS (usually port 587)"
+msgstr ""
+
+#: src/Admin/Screens.php:337
+msgid "SSL (usually port 465)"
+msgstr ""
+
+#: src/Admin/Screens.php:338
+msgid "None (upgrades to TLS if the server offers it)"
+msgstr ""
+
+#: src/Admin/Screens.php:344
+msgid "Port"
+msgstr ""
+
+#: src/Admin/Screens.php:345
+msgid "Sign in"
+msgstr ""
+
+#: src/Admin/Screens.php:345
+msgid "Almost every provider needs a username and password (or API key)."
+msgstr ""
+
+#: src/Admin/Screens.php:346
+msgid "Username"
+msgstr ""
+
+#: src/Admin/Screens.php:347
+msgid "Password or API key"
+msgstr ""
+
+#: src/Admin/Screens.php:436
+msgid "Set in wp-config.php"
+msgstr ""
+
+#. translators: %s: constant name
+#: src/Admin/Screens.php:438
+#, php-format
+msgid "Defined by the %s constant in wp-config.php."
+msgstr ""
+
+#: src/Admin/Screens.php:442
+msgid "Saved. Leave empty to keep it."
+msgstr ""
+
+#: src/Admin/Screens.php:445
+msgid "The saved value can no longer be decrypted (the site's security keys changed). Please enter it again."
+msgstr ""
+
+#: src/Admin/Screens.php:447
+msgid "Remove the saved value"
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Admin/Screens.php:478
+#, php-format
+msgid "Currently sending through: %s"
+msgstr ""
+
+#: src/Admin/Screens.php:482
+msgid "Send a test email to"
+msgstr ""
+
+#: src/Admin/Screens.php:484
+msgid "Send as HTML"
+msgstr ""
+
+#: src/Admin/Screens.php:485
+msgid "Tip: send it to an address at a different provider (for example a Gmail address if you send from Microsoft 365) to see whether it lands in the inbox or spam."
+msgstr ""
+
+#: src/Admin/Screens.php:486
+msgid "Send test email"
+msgstr ""
+
+#: src/Admin/Screens.php:502
+msgid "\"Sent\" means the mail service accepted it. Check the inbox (and the spam folder) to confirm delivery. If it went to spam, run Diagnostics."
+msgstr ""
+
+#: src/Admin/Screens.php:507
+msgid "SMTP conversation (passwords hidden)"
+msgstr ""
+
+#: src/Admin/Screens.php:533
+msgid "The email log is switched off. Turn it on in Setup → Email log and alerts."
+msgstr ""
+
+#: src/Admin/Screens.php:548
+msgid "All"
+msgstr ""
+
+#: src/Admin/Screens.php:565
+msgid "Search recipient or subject"
+msgstr ""
+
+#: src/Admin/Screens.php:566
+msgid "Recipient or subject"
+msgstr ""
+
+#: src/Admin/Screens.php:567
+msgid "Search"
+msgstr ""
+
+#: src/Admin/Screens.php:571
+msgid "No emails logged yet."
+msgstr ""
+
+#: src/Admin/Screens.php:575
+#: src/Admin/Screens.php:663
+msgid "Date"
+msgstr ""
+
+#: src/Admin/Screens.php:576
+msgid "Status"
+msgstr ""
+
+#: src/Admin/Screens.php:577
+#: src/Admin/Screens.php:664
+msgid "To"
+msgstr ""
+
+#: src/Admin/Screens.php:578
+msgid "Subject"
+msgstr ""
+
+#: src/Admin/Screens.php:579
+#: src/Admin/Screens.php:665
+msgid "Sent through"
+msgstr ""
+
+#: src/Admin/Screens.php:594
+#: src/Admin/Screens.php:661
+msgid "(no subject)"
+msgstr ""
+
+#. translators: 1: retention period, 2: number of log entries kept
+#: src/Admin/Screens.php:622
+#, php-format
+msgid "Entries are deleted after %1$s, and only the newest %2$s are kept. Change this on the Setup tab."
+msgstr ""
+
+#. translators: %d: number of days
+#: src/Admin/Screens.php:625
+#, php-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of log entries
+#: src/Admin/Screens.php:630
+#, php-format
+msgid "%d entry"
+msgid_plural "%d entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/Screens.php:640
+msgid "Clear the log"
+msgstr ""
+
+#: src/Admin/Screens.php:653
+msgid "Back to the log"
+msgstr ""
+
+#: src/Admin/Screens.php:655
+msgid "This entry no longer exists."
+msgstr ""
+
+#: src/Admin/Screens.php:667
+msgid "Resend of"
+msgstr ""
+
+#: src/Admin/Screens.php:670
+msgid "Headers"
+msgstr ""
+
+#: src/Admin/Screens.php:679
+msgid "Message"
+msgstr ""
+
+#: src/Admin/Screens.php:682
+msgid "Resend this email"
+msgstr ""
+
+#: src/Admin/Screens.php:684
+msgid "Message content was not kept, so this email cannot be resent. Switch on \"Also keep message content\" on the Setup tab to resend future emails."
+msgstr ""
+
+#: src/Admin/Screens.php:701
+msgid "Check your email setup"
+msgstr ""
+
+#: src/Admin/Screens.php:702
+msgid "Signs in to your mail service without sending anything, and looks up SPF, DKIM and DMARC for your From domain. Takes a few seconds and changes nothing."
+msgstr ""
+
+#: src/Admin/Screens.php:703
+msgid "Run diagnostics"
+msgstr ""
+
+#: src/Admin/Screens.php:708
+msgid "Diagnostics results"
+msgstr ""
+
+#: src/Checks/ConflictsCheck.php:57
+msgid "Other email plugins"
+msgstr ""
+
+#: src/Checks/ConflictsCheck.php:99
+msgid "Another plugin has replaced WordPress's wp_mail()"
+msgstr ""
+
+#. translators: %s: file path
+#: src/Checks/ConflictsCheck.php:101
+#, php-format
+msgid "wp_mail() is defined in %s instead of WordPress core, so emails may not go through iWorks.ie SMTP at all."
+msgstr ""
+
+#: src/Checks/ConflictsCheck.php:103
+msgid "Deactivate the plugin that file belongs to, or deactivate iWorks.ie SMTP and use that plugin instead. Running both causes unpredictable results."
+msgstr ""
+
+#: src/Checks/ConflictsCheck.php:110
+msgid "Another email plugin is active"
+msgstr ""
+
+#. translators: %s: plugin names
+#: src/Checks/ConflictsCheck.php:112
+#, php-format
+msgid "Also active: %s. Two plugins changing how email is sent will fight each other, and whichever runs last wins."
+msgstr ""
+
+#: src/Checks/ConflictsCheck.php:114
+msgid "Keep one. If you are switching to iWorks.ie SMTP, send a test email here first, then deactivate the other plugin."
+msgstr ""
+
+#: src/Checks/ConflictsCheck.php:117
+msgid "Open Plugins"
+msgstr ""
+
+#: src/Checks/ConflictsCheck.php:126
+msgid "No conflicting email plugins"
+msgstr ""
+
+#: src/Checks/ConflictsCheck.php:127
+msgid "No other SMTP plugin is active and wp_mail() is WordPress's own."
+msgstr ""
+
+#: src/Checks/ConnectionCheck.php:38
+msgid "Sign-in to the mail service"
+msgstr ""
+
+#: src/Checks/ConnectionCheck.php:60
+msgid "Signed in to Microsoft 365"
+msgstr ""
+
+#: src/Checks/ConnectionCheck.php:61
+msgid "Microsoft accepted the tenant ID, client ID and client secret. If test emails still fail, the problem is the Mail.Send permission or the mailbox; send a test email to see the exact reason."
+msgstr ""
+
+#. translators: %s: Google account email
+#: src/Checks/ConnectionCheck.php:71
+#, php-format
+msgid "Connected to Google as %s"
+msgstr ""
+
+#: src/Checks/ConnectionCheck.php:72
+msgid "Google accepted the saved connection and issued a fresh access token."
+msgstr ""
+
+#. translators: 1: host, 2: port
+#: src/Checks/ConnectionCheck.php:138
+#, php-format
+msgid "Connected to %1$s on port %2$d"
+msgstr ""
+
+#: src/Checks/ConnectionCheck.php:140
+msgid "The connection is encrypted and the username and password were accepted."
+msgstr ""
+
+#: src/Checks/ConnectionCheck.php:140
+msgid "The connection is encrypted. No sign-in is configured."
+msgstr ""
+
+#: src/Checks/ConnectionCheck.php:141
+msgid "Connected, but the connection is not encrypted. Passwords and emails travel in plain text."
+msgstr ""
+
+#: src/Checks/ConnectionCheck.php:142
+msgid "Choose TLS (port 587) or SSL (port 465) if your provider supports it."
+msgstr ""
+
+#. translators: %s: raw error
+#: src/Checks/ConnectionCheck.php:175
+#: src/Log/Alerts.php:111
+#, php-format
+msgid "Technical message: %s"
+msgstr ""
+
+#: src/Checks/ConnectionCheck.php:182
+#: src/Checks/CredentialsCheck.php:65
+#: src/Checks/DkimCheck.php:72
+#: src/Checks/FromAddressCheck.php:57
+#: src/Checks/MailerCheck.php:48
+#: src/Checks/SecretExpiryCheck.php:54
+msgid "Open Setup"
+msgstr ""
+
+#: src/Checks/ConnectionCheck.php:197
+msgid "Sign-in not tested"
+msgstr ""
+
+#: src/Checks/ConnectionCheck.php:198
+msgid "Finish the Setup tab first; this check then signs in to your mail service without sending anything."
+msgstr ""
+
+#: src/Checks/CredentialsCheck.php:31
+msgid "Saved passwords and secrets"
+msgstr ""
+
+#: src/Checks/CredentialsCheck.php:59
+msgid "A saved password can no longer be read"
+msgstr ""
+
+#: src/Checks/CredentialsCheck.php:60
+msgid "Secrets are encrypted with your site's security keys (salts) in wp-config.php. Those keys have changed since the secret was saved (a security plugin or host may rotate them), so it cannot be decrypted and sending will fail."
+msgstr ""
+
+#: src/Checks/CredentialsCheck.php:62
+msgid "Re-enter the password or client secret on the Setup tab (or reconnect Google). To stop this happening again, add define( 'IWIESM_ENCRYPTION_KEY', 'a long random string' ); to wp-config.php before re-entering them."
+msgstr ""
+
+#: src/Checks/CredentialsCheck.php:75
+msgid "Secrets are kept in wp-config.php"
+msgstr ""
+
+#. translators: %s: constant names
+#: src/Checks/CredentialsCheck.php:77
+#, php-format
+msgid "Defined there: %s. They are never stored in the database."
+msgstr ""
+
+#: src/Checks/CredentialsCheck.php:82
+msgid "Saved secrets are encrypted"
+msgstr ""
+
+#: src/Checks/CredentialsCheck.php:84
+msgid "Secrets are encrypted in the database with your IWIESM_ENCRYPTION_KEY."
+msgstr ""
+
+#: src/Checks/CredentialsCheck.php:85
+msgid "Secrets are encrypted in the database with a key derived from your site's security salts. For extra safety you can define them as constants in wp-config.php instead (see the plugin FAQ)."
+msgstr ""
+
+#: src/Checks/DkimCheck.php:31
+msgid "DKIM signing"
+msgstr ""
+
+#: src/Checks/DkimCheck.php:52
+msgid "DKIM adds a digital signature that proves an email really came from your domain and was not changed. It is the most important signal for getting into the inbox, and it is required for DMARC to pass when you send through a third-party service."
+msgstr ""
+
+#: src/Checks/DkimCheck.php:66
+msgid "We do not know which DKIM selector your email provider uses, so we cannot look it up."
+msgstr ""
+
+#: src/Checks/DkimCheck.php:69
+msgid "Find the selector in your provider's domain authentication settings (the part before ._domainkey) and enter it under \"DKIM selector\" on the Setup tab."
+msgstr ""
+
+#. translators: %s: domain
+#: src/Checks/DkimCheck.php:100
+#, php-format
+msgid "DKIM key found for %s"
+msgstr ""
+
+#. translators: %s: selectors
+#: src/Checks/DkimCheck.php:102
+#, php-format
+msgid "Selector(s) found: %s."
+msgstr ""
+
+#: src/Checks/DkimCheck.php:107
+msgid "In the Microsoft Defender portal go to Email & collaboration → Policies → Email authentication settings → DKIM, select your domain, publish the two CNAME records it shows (selector1._domainkey and selector2._domainkey), then switch signing on."
+msgstr ""
+
+#: src/Checks/DkimCheck.php:109
+msgid "In the Google Admin console go to Apps → Google Workspace → Gmail → Authenticate email, generate a new record, add the TXT record google._domainkey to your DNS, then click Start authentication. Personal Gmail addresses cannot set this up."
+msgstr ""
+
+#: src/Checks/DkimCheck.php:111
+msgid "Follow your email provider's \"domain authentication\" or \"DKIM\" guide and add the records it gives you. If it uses a different selector, enter it on the Setup tab."
+msgstr ""
+
+#. translators: %s: domain
+#: src/Checks/DkimCheck.php:116
+#, php-format
+msgid "No DKIM key found for %s"
+msgstr ""
+
+#. translators: %s: selectors
+#: src/Checks/DkimCheck.php:118
+#, php-format
+msgid "We looked for these selectors and found none: %s."
+msgstr ""
+
+#: src/Checks/DmarcCheck.php:31
+msgid "DMARC policy"
+msgstr ""
+
+#: src/Checks/DmarcCheck.php:49
+msgid "DMARC tells receivers what to do with email that fails SPF and DKIM, and stops others sending as your domain. Google, Yahoo and Microsoft now expect a DMARC record from domains that send a lot of email."
+msgstr ""
+
+#. translators: %s: domain
+#: src/Checks/DmarcCheck.php:68
+#, php-format
+msgid "No DMARC record for %s"
+msgstr ""
+
+#: src/Checks/DmarcCheck.php:69
+msgid "Your domain does not publish a DMARC policy."
+msgstr ""
+
+#. translators: %s: domain
+#: src/Checks/DmarcCheck.php:73
+#, php-format
+msgid "Once SPF and DKIM pass, add a TXT record named _dmarc.%s with the value: v=DMARC1; p=none; rua=mailto:you@yourdomain.com. After a few weeks of clean reports, change p=none to p=quarantine."
+msgstr ""
+
+#. translators: %s: domain
+#: src/Checks/DmarcCheck.php:81
+#, php-format
+msgid "%s has more than one DMARC record"
+msgstr ""
+
+#: src/Checks/DmarcCheck.php:82
+msgid "With more than one DMARC record, receivers ignore DMARC entirely."
+msgstr ""
+
+#: src/Checks/DmarcCheck.php:85
+msgid "Delete all but one of the _dmarc TXT records."
+msgstr ""
+
+#: src/Checks/DmarcCheck.php:95
+msgid "DMARC is in monitoring mode (p=none)"
+msgstr ""
+
+#. translators: %s: record
+#: src/Checks/DmarcCheck.php:97
+#, php-format
+msgid "Found: %s. This meets the bulk-sender requirement but does not protect your domain from spoofing."
+msgstr ""
+
+#: src/Checks/DmarcCheck.php:100
+msgid "When your DMARC reports show your real email passing, change p=none to p=quarantine (and later p=reject)."
+msgstr ""
+
+#. translators: %s: policy
+#: src/Checks/DmarcCheck.php:107
+#, php-format
+msgid "DMARC policy is %s"
+msgstr ""
+
+#. translators: %s: record
+#: src/Checks/DmarcCheck.php:109
+#: src/Checks/SpfCheck.php:119
+#, php-format
+msgid "Found: %s"
+msgstr ""
+
+#: src/Checks/DnsCheckHelper.php:26
+msgid "Set a From address on the Setup tab so we know which domain to check."
+msgstr ""
+
+#: src/Checks/DnsCheckHelper.php:39
+msgid "This server does not allow DNS lookups from PHP (dns_get_record is disabled), so this could not be checked here. Use an online tool such as MXToolbox to check it."
+msgstr ""
+
+#: src/Checks/FromAddressCheck.php:65
+msgid "No From address is set"
+msgstr ""
+
+#. translators: %s: example address
+#: src/Checks/FromAddressCheck.php:67
+#, php-format
+msgid "WordPress will send from its default address (%s), which usually does not exist and is not allowed by your mail service."
+msgstr ""
+
+#: src/Checks/FromAddressCheck.php:69
+msgid "Enter a real address on your own domain, for example hello@yourdomain.com, on the Setup tab."
+msgstr ""
+
+#. translators: %s: domain
+#: src/Checks/FromAddressCheck.php:79
+#, php-format
+msgid "Sending from a free %s address"
+msgstr ""
+
+#: src/Checks/FromAddressCheck.php:80
+msgid "Free mailbox providers publish strict DMARC policies, so email claiming to be from their domain but sent from somewhere else is rejected or sent to spam."
+msgstr ""
+
+#: src/Checks/FromAddressCheck.php:82
+msgid "Use an address on your own domain. If you really want to send from a Gmail address, choose the Google mailer and connect that account."
+msgstr ""
+
+#: src/Checks/FromAddressCheck.php:92
+msgid "From address differs from the connected Google account"
+msgstr ""
+
+#. translators: 1: from address, 2: Google account
+#: src/Checks/FromAddressCheck.php:94
+#, php-format
+msgid "Emails are set to come from %1$s but are sent through %2$s. Gmail replaces the From address with the account address unless %1$s is added as a \"Send mail as\" alias."
+msgstr ""
+
+#: src/Checks/FromAddressCheck.php:96
+msgid "In Gmail settings → Accounts → \"Send mail as\", add the From address, or change the From address to the connected account."
+msgstr ""
+
+#: src/Checks/FromAddressCheck.php:107
+msgid "From address is on a different domain from the SMTP login"
+msgstr ""
+
+#. translators: 1: from, 2: username
+#: src/Checks/FromAddressCheck.php:109
+#, php-format
+msgid "You sign in as %2$s but send from %1$s. Many providers reject this or rewrite the From address."
+msgstr ""
+
+#: src/Checks/FromAddressCheck.php:111
+msgid "Send from the address you sign in with, or confirm with your provider that the From domain is verified for your account."
+msgstr ""
+
+#: src/Checks/FromAddressCheck.php:120
+msgid "Other plugins can change the From address"
+msgstr ""
+
+#. translators: %s: from address
+#: src/Checks/FromAddressCheck.php:122
+#, php-format
+msgid "Your From address is %s, but \"Force From address\" is off, so a form or shop plugin can send from a different address that your mail service may reject."
+msgstr ""
+
+#: src/Checks/FromAddressCheck.php:124
+msgid "Switch on \"Force From address\" unless you know you need plugins to set their own. Replies still go to the Reply-To they set."
+msgstr ""
+
+#. translators: %s: from address
+#: src/Checks/FromAddressCheck.php:132
+#, php-format
+msgid "Sending from %s"
+msgstr ""
+
+#: src/Checks/FromAddressCheck.php:133
+msgid "The From address is on your own domain and matches how you send."
+msgstr ""
+
+#: src/Checks/MailerCheck.php:32
+msgid "Email sending method"
+msgstr ""
+
+#: src/Checks/MailerCheck.php:56
+msgid "WordPress is sending email with PHP mail()"
+msgstr ""
+
+#: src/Checks/MailerCheck.php:57
+msgid "No mail service is set up, so emails are handed to the web server to deliver. Many hosts block this, and mail that does get out often lands in spam because it is not authenticated for your domain."
+msgstr ""
+
+#: src/Checks/MailerCheck.php:59
+msgid "Password resets, order confirmations and contact form messages may silently never arrive."
+msgstr ""
+
+#: src/Checks/MailerCheck.php:60
+msgid "On the Setup tab choose Microsoft 365, Google or Other SMTP and follow the steps."
+msgstr ""
+
+#: src/Checks/MailerCheck.php:67
+msgid "Microsoft 365 (Graph API)"
+msgstr ""
+
+#: src/Checks/MailerCheck.php:68
+msgid "Google (Gmail API)"
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Checks/MailerCheck.php:83
+#, php-format
+msgid "%s is selected but not finished"
+msgstr ""
+
+#: src/Checks/MailerCheck.php:85
+msgid "The Google client details are missing, or \"Connect with Google\" has not been completed."
+msgstr ""
+
+#: src/Checks/MailerCheck.php:86
+msgid "Some required fields on the Setup tab are empty, so emails will fail."
+msgstr ""
+
+#: src/Checks/MailerCheck.php:88
+msgid "Complete the highlighted steps on the Setup tab, save, then send a test email."
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Checks/MailerCheck.php:96
+#, php-format
+msgid "Sending through %s"
+msgstr ""
+
+#: src/Checks/MailerCheck.php:97
+msgid "Email is handed to a real mail service instead of the web server."
+msgstr ""
+
+#: src/Checks/RecentFailuresCheck.php:32
+msgid "Recent failed emails"
+msgstr ""
+
+#: src/Checks/RecentFailuresCheck.php:49
+msgid "The email log is switched off, so we cannot tell whether emails have been failing."
+msgstr ""
+
+#: src/Checks/RecentFailuresCheck.php:57
+msgid "No failed emails in the last 7 days"
+msgstr ""
+
+#. translators: %d: count
+#: src/Checks/RecentFailuresCheck.php:59
+#, php-format
+msgid "%d email sent successfully."
+msgid_plural "%d emails sent successfully."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: count
+#: src/Checks/RecentFailuresCheck.php:68
+#, php-format
+msgid "%d email failed in the last 7 days"
+msgid_plural "%d emails failed in the last 7 days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Checks/RecentFailuresCheck.php:76
+msgid "View failed emails"
+msgstr ""
+
+#. translators: 1: plain-English title, 2: raw error
+#: src/Checks/RecentFailuresCheck.php:82
+#, php-format
+msgid "Most recent: %1$s (%2$s)"
+msgstr ""
+
+#: src/Checks/SecretExpiryCheck.php:31
+msgid "Microsoft client secret expiry"
+msgstr ""
+
+#: src/Checks/SecretExpiryCheck.php:48
+msgid "Only used with the Microsoft 365 mailer."
+msgstr ""
+
+#: src/Checks/SecretExpiryCheck.php:51
+msgid "In the Entra admin centre open the app registration → Certificates & secrets → New client secret. Paste the new Value and its expiry date on the Setup tab, then delete the old secret."
+msgstr ""
+
+#: src/Checks/SecretExpiryCheck.php:63
+msgid "Secret expiry date not entered"
+msgstr ""
+
+#: src/Checks/SecretExpiryCheck.php:64
+msgid "Microsoft client secrets stop working on a fixed date, and email silently stops when they do. Enter the date shown in the \"Expires\" column under Certificates & secrets so we can warn you two weeks before."
+msgstr ""
+
+#. translators: %s: date
+#: src/Checks/SecretExpiryCheck.php:71
+#, php-format
+msgid "The client secret expired on %s"
+msgstr ""
+
+#: src/Checks/SecretExpiryCheck.php:72
+msgid "Microsoft no longer accepts it, so the site cannot send email."
+msgstr ""
+
+#. translators: %d: days
+#: src/Checks/SecretExpiryCheck.php:82
+#, php-format
+msgid "The client secret expires in %d day"
+msgid_plural "The client secret expires in %d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: date
+#: src/Checks/SecretExpiryCheck.php:84
+#, php-format
+msgid "It expires on %s. Replace it before then to avoid an outage."
+msgstr ""
+
+#. translators: %d: days
+#: src/Checks/SecretExpiryCheck.php:93
+#, php-format
+msgid "Client secret valid for %d more day"
+msgid_plural "Client secret valid for %d more days"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: date
+#: src/Checks/SecretExpiryCheck.php:95
+#, php-format
+msgid "Expires on %s. We will email you two weeks before."
+msgstr ""
+
+#: src/Checks/SpfCheck.php:31
+msgid "SPF record"
+msgstr ""
+
+#: src/Checks/SpfCheck.php:55
+msgid "SPF tells receiving mail servers which services may send email for your domain. Without it, or if your mail service is not listed, your emails are more likely to be marked as spam. Google and Yahoo require SPF or DKIM for all senders."
+msgstr ""
+
+#. translators: %s: domain
+#: src/Checks/SpfCheck.php:60
+#, php-format
+msgid "No SPF record for %s"
+msgstr ""
+
+#: src/Checks/SpfCheck.php:61
+msgid "Your domain does not publish an SPF record."
+msgstr ""
+
+#. translators: 1: include domain, 2: provider
+#: src/Checks/SpfCheck.php:66
+#, php-format
+msgid "Add a TXT record on your domain with the value: v=spf1 include:%1$s ~all (this authorises %2$s). Add other services you send from before ~all."
+msgstr ""
+
+#: src/Checks/SpfCheck.php:67
+msgid "Add a TXT record starting v=spf1 that lists the services you send from. Your email provider documents the exact value."
+msgstr ""
+
+#. translators: %s: domain
+#: src/Checks/SpfCheck.php:75
+#, php-format
+msgid "%s has more than one SPF record"
+msgstr ""
+
+#: src/Checks/SpfCheck.php:76
+msgid "A domain may only have one SPF record. With two or more, receivers treat SPF as broken for all of them."
+msgstr ""
+
+#: src/Checks/SpfCheck.php:79
+msgid "Merge them into one TXT record: keep one v=spf1 at the start, put every include: from both records in the middle, and one ~all at the end. Delete the other record."
+msgstr ""
+
+#: src/Checks/SpfCheck.php:88
+msgid "SPF allows anyone to send as your domain"
+msgstr ""
+
+#. translators: %s: SPF record
+#: src/Checks/SpfCheck.php:90
+#, php-format
+msgid "Your SPF record ends in +all (or all), which authorises every server on the internet: %s"
+msgstr ""
+
+#: src/Checks/SpfCheck.php:93
+msgid "Change the ending to ~all (soft fail) or -all (fail)."
+msgstr ""
+
+#. translators: %s: provider
+#: src/Checks/SpfCheck.php:101
+#, php-format
+msgid "SPF does not mention %s"
+msgstr ""
+
+#. translators: 1: record, 2: include
+#: src/Checks/SpfCheck.php:103
+#, php-format
+msgid "Your SPF record is: %1$s. We expected it to contain include:%2$s for the service you send through."
+msgstr ""
+
+#. translators: %s: include
+#: src/Checks/SpfCheck.php:107
+#, php-format
+msgid "Add include:%s to the record, just before the ~all or -all at the end. If your provider told you to use a different include, you can ignore this."
+msgstr ""
+
+#. translators: %s: domain
+#: src/Checks/SpfCheck.php:114
+#, php-format
+msgid "SPF is set up for %s"
+msgstr ""
+
+#. translators: %s: record
+#: src/Checks/SpfCheck.php:117
+#, php-format
+msgid "Found: %s. We cannot tell which include your SMTP provider needs, so check it is listed."
+msgstr ""
+
+#. translators: %s: site name
+#: src/Log/Alerts.php:99
+#, php-format
+msgid "An email from %s could not be sent."
+msgstr ""
+
+#. translators: %s: email subject
+#: src/Log/Alerts.php:102
+#, php-format
+msgid "Subject: %s"
+msgstr ""
+
+#: src/Log/Alerts.php:107
+msgid "How to fix it:"
+msgstr ""
+
+#. translators: %s: URL
+#: src/Log/Alerts.php:114
+#, php-format
+msgid "Email log: %s"
+msgstr ""
+
+#: src/Log/Alerts.php:116
+msgid "You will get at most one of these alerts per hour. Turn them off on the Setup tab."
+msgstr ""
+
+#. translators: %s: site name
+#: src/Log/Alerts.php:120
+#, php-format
+msgid "[%s] Website email is failing"
+msgstr ""
+
+#. translators: %s: site name
+#: src/Log/Alerts.php:148
+#, php-format
+msgid "[%s] Microsoft 365 email secret expires soon"
+msgstr ""
+
+#. translators: %s: date
+#: src/Log/Alerts.php:153
+#, php-format
+msgid "The Microsoft client secret this website uses to send email expires on %s. When it expires, the website stops sending email."
+msgstr ""
+
+#: src/Log/Alerts.php:155
+msgid "In the Entra admin centre open the app registration, go to Certificates & secrets, add a new client secret, then paste its Value and new expiry date on the Setup tab."
+msgstr ""
+
+#: src/Log/Alerts.php:225
+msgid "iWorks.ie SMTP:"
+msgstr ""
+
+#. translators: %s: human time difference, e.g. "2 hours"
+#: src/Log/Alerts.php:229
+#, php-format
+msgid "an email failed to send %s ago."
+msgstr ""
+
+#: src/Log/Alerts.php:233
+msgid "See what went wrong"
+msgstr ""
+
+#: src/Log/Alerts.php:234
+msgid "Dismiss"
+msgstr ""
+
+#: src/Mail/Transport/Gmail.php:145
+msgid "Google is selected but not connected. Click \"Connect with Google\" on the Setup tab."
+msgstr ""
+
+#: src/Mail/Transport/MicrosoftGraph.php:57
+msgid "Microsoft 365 is selected but the tenant ID, client ID, client secret or mailbox is missing."
+msgstr ""
+
+#: src/Plugin.php:112
+#: src/Plugin.php:129
+#: src/Plugin.php:130
+msgid "SMTP"
+msgstr ""
+
+#: src/Plugin.php:117
+msgid "Send email through Microsoft 365, Google or any SMTP server, with plain-English errors and deliverability checks."
+msgstr ""
+
+#: src/Plugin.php:119
+msgid "Reliable email for WordPress. Nothing locked, no upsells, nothing sent through third parties."
+msgstr ""
+
+#: src/Plugin.php:169
+msgid "Settings"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:40
+msgid "The email could not be sent"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:41
+msgid "The mail service returned an error we do not have a plain-English explanation for yet. The technical message below says what it reported."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:42
+msgid "Check the settings on the Setup tab, then run Diagnostics. If it still fails, send the technical message to whoever manages your email."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:60
+msgid "The Microsoft client secret has expired"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:61
+msgid "Client secrets in Microsoft Entra only last for a set time (often 6, 12 or 24 months). This one has run out, so Microsoft refuses to let the site sign in."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:62
+msgid "In the Entra admin centre open your app registration, go to Certificates & secrets, create a new client secret, and paste its Value (not the Secret ID) on the Setup tab. Enter the new expiry date too so we can warn you next time."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:68
+msgid "The Microsoft client secret is wrong"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:69
+msgid "Microsoft did not recognise the client secret. The most common cause is copying the \"Secret ID\" column instead of the \"Value\" column."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:70
+msgid "Create a new client secret under Certificates & secrets and copy the Value straight away (Microsoft only shows it once). Paste it on the Setup tab and save."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:76
+msgid "Microsoft cannot find this app in your tenant"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:77
+msgid "The Application (client) ID does not exist in the directory (tenant) you entered. Either the client ID is mistyped, or the tenant ID belongs to a different Microsoft 365 organisation."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:78
+msgid "Copy both the Application (client) ID and the Directory (tenant) ID from the Overview page of the same app registration."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:84
+msgid "The Microsoft tenant ID is not valid"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:85
+msgid "Microsoft could not find a directory with the tenant ID you entered."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:86
+msgid "Copy the Directory (tenant) ID from the app registration's Overview page. It looks like 12345678-abcd-... You can also use your tenant domain, for example yourcompany.onmicrosoft.com."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:92
+msgid "Admin consent has not been granted"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:93
+msgid "The app has been registered but a Microsoft 365 administrator has not approved its permission to send mail."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:94
+msgid "In the app registration go to API permissions and click \"Grant admin consent for <your organisation>\". You need to be a Global Administrator, Privileged Role Administrator or Cloud Application Administrator."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:100
+msgid "The Microsoft app is disabled"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:101
+msgid "The app registration exists but has been disabled by an administrator, or its credentials are not valid for sign-in."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:102
+msgid "Ask your Microsoft 365 administrator to check the app under Enterprise applications and make sure \"Enabled for users to sign in\" is set to Yes."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:108
+msgid "Blocked by a Conditional Access policy"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:109
+msgid "Your organisation has a Conditional Access rule (for example \"only allow sign-ins from our office network\") that blocked the website's sign-in."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:110
+msgid "Ask your Microsoft 365 administrator to exclude this app (workload identity) from the policy, or to allow your web server's IP address."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:117
+msgid "The app is not allowed to send from this mailbox"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:118
+msgid "Sign-in worked, but Microsoft refused to send. Usually the Mail.Send permission was added as \"Delegated\" instead of \"Application\", admin consent is missing, or an RBAC / Application Access Policy limits the app to a different mailbox."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:119
+msgid "In API permissions make sure Microsoft Graph → Mail.Send is listed with type \"Application\" and a green \"Granted\" tick. If your admin limited the app to certain mailboxes, add the From mailbox to that scope. Changes can take up to an hour to apply."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:125
+msgid "The From mailbox was not found in Microsoft 365"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:126
+msgid "Microsoft could not find a licensed mailbox for the From address. It may be mistyped, an alias rather than the main address, a distribution list, or a user without an Exchange Online licence."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:127
+msgid "Use the primary email address of a real mailbox (a licensed user or a shared mailbox) in \"Send from mailbox\" on the Setup tab."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:133
+msgid "Not allowed to send as that address"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:134
+msgid "The email's From address is different from the mailbox it is being sent through, and that mailbox does not have \"Send As\" rights for it."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:135
+msgid "Leave \"Force From address\" switched on so every email is sent from the mailbox itself, or ask your admin to grant Send As permission."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:141
+msgid "The email is too large"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:142
+msgid "The email with its attachments is bigger than the service accepts. Microsoft Graph accepts up to about 3 MB of attachments in one request; Gmail accepts up to 25 MB."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:143
+msgid "Send a link to the file instead of attaching it, or reduce the attachment size."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:149
+msgid "Sending limit reached"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:150
+msgid "The mail service is temporarily refusing emails because too many were sent in a short time, or a daily limit was reached."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:151
+msgid "Wait a while and try again. If this happens regularly, the site is sending more than a normal mailbox allows; use a transactional email service (for example via Other SMTP) for bulk mail."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:157
+msgid "The access token was rejected"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:158
+msgid "The short-lived sign-in token was refused. This normally fixes itself on the next email."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:159
+msgid "Send a test email. If it keeps failing, re-save the settings on the Setup tab to force a fresh sign-in."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:166
+msgid "The Google connection has expired or was revoked"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:167
+msgid "Google no longer accepts the saved sign-in. Common causes: the Google Cloud app is still in \"Testing\" (Google expires those connections after 7 days), the account password was changed, or access was removed in the Google account's security settings."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:168
+msgid "In Google Cloud set the app's audience to Internal (Workspace) or publish it \"In production\" (Gmail), then click \"Connect with Google\" again on the Setup tab."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:174
+msgid "The Google client ID or secret is wrong"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:175
+msgid "Google did not recognise the OAuth client ID and secret pair, or the client was deleted."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:176
+msgid "In Google Cloud open Clients, select the Web application client, and copy the Client ID and Client secret again."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:182
+msgid "The redirect URI does not match"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:183
+msgid "Google only sends you back to addresses listed on the OAuth client. The address for this site is missing or slightly different (http vs https, www, or a trailing character)."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:184
+msgid "Copy the redirect URI shown on the Setup tab with the Copy button and paste it, unchanged, under \"Authorised redirect URIs\" on your Google OAuth client."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:190
+msgid "Google access was not approved"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:191
+msgid "The Google consent screen was cancelled, or the account is not allowed to use this app (in Testing mode only listed test users can connect)."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:192
+msgid "Click \"Connect with Google\" again and approve the \"Send email on your behalf\" permission. If the app is in Testing, add the account as a test user or publish the app."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:198
+msgid "The Gmail API is not switched on"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:199
+msgid "The Google Cloud project behind your OAuth client does not have the Gmail API enabled."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:200
+msgid "In Google Cloud go to APIs & Services → Library, search for \"Gmail API\" and click Enable. Wait a minute, then send a test email."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:206
+msgid "Google did not grant permission to send"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:207
+msgid "The connection was made without the \"Send email on your behalf\" permission (the checkbox on Google's consent screen may have been left unticked)."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:208
+msgid "Click Disconnect, then \"Connect with Google\" again and make sure the send-email permission is ticked."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:214
+msgid "Gmail is not enabled for this account"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:215
+msgid "The Google account you connected does not have Gmail switched on (common for Workspace accounts where Gmail is disabled by the admin)."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:216
+msgid "Connect an account that has a Gmail mailbox, or ask your Workspace admin to enable Gmail for it."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:223
+msgid "Microsoft 365 has SMTP sign-in switched off"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:224
+msgid "Microsoft is retiring password sign-in over SMTP (Basic auth). Most Microsoft 365 tenants now refuse it, even with the right password."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:225
+msgid "Choose \"Microsoft 365\" on the Setup tab instead of Other SMTP. It sends through the Microsoft Graph API, which does not need SMTP sign-in."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:231
+msgid "Google refused the password"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:232
+msgid "Gmail and Google Workspace no longer accept your normal password over SMTP."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:233
+msgid "Choose \"Google\" on the Setup tab to connect with Google sign-in instead. If you must use SMTP, create an App Password in your Google account (this needs 2-Step Verification)."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:239
+msgid "The SMTP username or password was not accepted"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:240
+msgid "The mail server rejected the sign-in details."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:241
+msgid "Re-enter the SMTP username (usually the full email address, or the API key name your provider gives you) and the password or API key. Check there are no spaces before or after."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:247
+msgid "The mail server's security certificate was not trusted"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:248
+msgid "The secure connection failed because the server's certificate does not match the host name, has expired, or your web server's certificate list is out of date."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:249
+msgid "Use the exact host name your provider documents (for example smtp.provider.com rather than an IP address or mail.yourdomain.com). If that is correct, ask your host to update the server's CA certificates."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:255
+msgid "Could not connect to the mail server"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:256
+msgid "Your web server could not open a connection to the SMTP host. The host name may be wrong, or (very often) your hosting company blocks outgoing mail ports such as 25, 465 and 587."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:257
+msgid "Check the host and port. Try port 587 with TLS, then 465 with SSL. If neither connects, ask your host whether outgoing SMTP is blocked, or use Microsoft 365 / Google, which send over normal HTTPS."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:263
+msgid "The server requires encryption"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:264
+msgid "The mail server will only accept a sign-in over an encrypted connection."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:265
+msgid "Set Encryption to TLS (port 587) or SSL (port 465) on the Setup tab."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:271
+msgid "The server refused the From address"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:272
+msgid "The mail server will not send email from this From address with these sign-in details, usually because the address belongs to a different account or an unverified domain."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:273
+msgid "Set the From address to the account you sign in with, or verify your domain / sender with your email provider. Keep \"Force From address\" switched on."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:279
+msgid "This server cannot send email by itself"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:280
+msgid "WordPress is using PHP's built-in mail function and your host has disabled it or it is not configured."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:281
+msgid "Choose Microsoft 365, Google or Other SMTP on the Setup tab so email goes through a real mail service."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:287
+msgid "The website could not reach the mail service"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:288
+msgid "The HTTPS request to Microsoft or Google timed out or could not be made. Your host may block outgoing connections or have a DNS problem."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:289
+msgid "Try again in a minute. If it keeps happening, ask your host to allow outgoing HTTPS to graph.microsoft.com / login.microsoftonline.com or gmail.googleapis.com / oauth2.googleapis.com."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:295
+msgid "An email address is not valid"
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:296
+msgid "The To, From or Reply-To address is empty or not a valid email address."
+msgstr ""
+
+#: src/Support/ErrorTranslator.php:297
+msgid "Check the From address on the Setup tab and the recipient address used by the form or plugin that sent this email."
+msgstr ""
