@@ -614,12 +614,22 @@ final class Screens {
 			}
 		}
 
+		$log_days = (int) Settings::get( 'log_days' );
+		$log_rows = (int) Settings::get( 'log_max_rows' );
 		echo '<p class="description">' . esc_html(
 			sprintf(
-				/* translators: 1: days, 2: rows */
-				__( 'Entries are deleted after %1$d days, and only the newest %2$d are kept. Change this on the Setup tab.', 'iworksie-smtp' ),
-				(int) Settings::get( 'log_days' ),
-				(int) Settings::get( 'log_max_rows' )
+				/* translators: 1: retention period, 2: number of log entries kept */
+				__( 'Entries are deleted after %1$s, and only the newest %2$s are kept. Change this on the Setup tab.', 'iworksie-smtp' ),
+				sprintf(
+					/* translators: %d: number of days */
+					_n( '%d day', '%d days', $log_days, 'iworksie-smtp' ),
+					$log_days
+				),
+				sprintf(
+					/* translators: %d: number of log entries */
+					_n( '%d entry', '%d entries', $log_rows, 'iworksie-smtp' ),
+					$log_rows
+				)
 			)
 		) . '</p>';
 

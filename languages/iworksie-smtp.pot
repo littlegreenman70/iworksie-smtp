@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-27T15:01:25+00:00\n"
+"POT-Creation-Date: 2026-11-28T17:50:40+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: iworksie-smtp\n"
@@ -621,7 +621,7 @@ msgid "No emails logged yet."
 msgstr ""
 
 #: src/Admin/Screens.php:575
-#: src/Admin/Screens.php:653
+#: src/Admin/Screens.php:663
 msgid "Date"
 msgstr ""
 
@@ -630,7 +630,7 @@ msgid "Status"
 msgstr ""
 
 #: src/Admin/Screens.php:577
-#: src/Admin/Screens.php:654
+#: src/Admin/Screens.php:664
 msgid "To"
 msgstr ""
 
@@ -639,66 +639,82 @@ msgid "Subject"
 msgstr ""
 
 #: src/Admin/Screens.php:579
-#: src/Admin/Screens.php:655
+#: src/Admin/Screens.php:665
 msgid "Sent through"
 msgstr ""
 
 #: src/Admin/Screens.php:594
-#: src/Admin/Screens.php:651
+#: src/Admin/Screens.php:661
 msgid "(no subject)"
 msgstr ""
 
-#. translators: 1: days, 2: rows
-#: src/Admin/Screens.php:620
+#. translators: 1: retention period, 2: number of log entries kept
+#: src/Admin/Screens.php:622
 #, php-format
-msgid "Entries are deleted after %1$d days, and only the newest %2$d are kept. Change this on the Setup tab."
+msgid "Entries are deleted after %1$s, and only the newest %2$s are kept. Change this on the Setup tab."
 msgstr ""
 
+#. translators: %d: number of days
+#: src/Admin/Screens.php:625
+#, php-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of log entries
 #: src/Admin/Screens.php:630
+#, php-format
+msgid "%d entry"
+msgid_plural "%d entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/Screens.php:640
 msgid "Clear the log"
 msgstr ""
 
-#: src/Admin/Screens.php:643
+#: src/Admin/Screens.php:653
 msgid "Back to the log"
 msgstr ""
 
-#: src/Admin/Screens.php:645
+#: src/Admin/Screens.php:655
 msgid "This entry no longer exists."
 msgstr ""
 
-#: src/Admin/Screens.php:657
+#: src/Admin/Screens.php:667
 msgid "Resend of"
 msgstr ""
 
-#: src/Admin/Screens.php:660
+#: src/Admin/Screens.php:670
 msgid "Headers"
 msgstr ""
 
-#: src/Admin/Screens.php:669
+#: src/Admin/Screens.php:679
 msgid "Message"
 msgstr ""
 
-#: src/Admin/Screens.php:672
+#: src/Admin/Screens.php:682
 msgid "Resend this email"
 msgstr ""
 
-#: src/Admin/Screens.php:674
+#: src/Admin/Screens.php:684
 msgid "Message content was not kept, so this email cannot be resent. Switch on \"Also keep message content\" on the Setup tab to resend future emails."
 msgstr ""
 
-#: src/Admin/Screens.php:691
+#: src/Admin/Screens.php:701
 msgid "Check your email setup"
 msgstr ""
 
-#: src/Admin/Screens.php:692
+#: src/Admin/Screens.php:702
 msgid "Signs in to your mail service without sending anything, and looks up SPF, DKIM and DMARC for your From domain. Takes a few seconds and changes nothing."
 msgstr ""
 
-#: src/Admin/Screens.php:693
+#: src/Admin/Screens.php:703
 msgid "Run diagnostics"
 msgstr ""
 
-#: src/Admin/Screens.php:698
+#: src/Admin/Screens.php:708
 msgid "Diagnostics results"
 msgstr ""
 

@@ -16,3 +16,8 @@
 
 - [x] install-wp-tests.sh tag matching for WP 6.5 / 6.7 integration matrix
 - [x] Plugin Check: CatcherBase ABSPATH, Dns/Screens OffloadedContent false positives
+
+## 2026-11-28 final 1.0.0 pass
+- Plural forms for log retention copy. Plugin Check DirectDB false positives ignored with line-level reasons (custom `{$wpdb->prefix}iwiesm_log` table).
+- Lint/analyse/unit/integration/build/Plugin Check re-run; zip refreshed in ~/Downloads.
+

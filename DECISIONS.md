@@ -37,3 +37,7 @@ Choices made while building without a review round. Each one is easy to revisit.
 - Real screenshots (Setup, failed test explained, Diagnostics, Log).
 - Banner/icon artwork (placeholders not yet added to `.wordpress-org/`).
 - Test once against a real Microsoft 365 tenant and a real Google account (CI uses mocked HTTP for both).
+
+### 2026-11-28 plurals / final pass
+- Plural forms for log retention copy. Plugin Check DirectDB false positives ignored with line-level reasons (custom `{$wpdb->prefix}iwiesm_log` table).
+

@@ -118,4 +118,5 @@ Diagnostics also makes DNS lookups for your From domain's SPF, DKIM and DMARC re
 == Changelog ==
 
 = 1.0.0 =
+* Use singular/plural forms for the email-log retention description.
 * First release: Microsoft 365 (Graph API), Google (Gmail API) and SMTP mailers, plain-English errors, diagnostics, size-capped email log with resend, failure and secret-expiry alerts, WP-CLI commands.
